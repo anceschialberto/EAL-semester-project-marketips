@@ -1,0 +1,43 @@
+/**
+ * This file should get overwritten if Method 1 is used. If Method 2 is chosen,
+ * remove this comment and start adding your styles to this file.
+ */
+
+/* Admin backend */
+#admin-menu{ z-index: 9999; }
+
+/* Article - Custom Grid */
+.page-article-custom-grid .view-content{ overflow: hidden; }
+.page-article-custom-grid .col{ margin-bottom: 20px; }
+
+/* Article */
+.node-type-article .field-name-field-image img {
+  max-width: 100%;
+  height: auto;
+}
+.node-type-article .view-article-photo-gallery .col {
+  margin-bottom: 20px;
+}
+
+.node-type-article .view-article-photo-gallery .modal-body img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation */
+.navbar-nav i { margin-right: 5px; }
+
+/* Youtube icon */
+i.fa.fa-youtube { margin-right: 5px; }
+
+/* Social media */
+.social-icon p { margin: 0; }
+.social-icon p a {
+  margin-left: 5px;
+  font-size: 35px;
+  color: #fff;
+}
+
+/* Footer */
+footer { margin-top: 20px; padding: 20px 0 0; background-color: #222; color: #fff; }
+footer a { color: #fff; }
