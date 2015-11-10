@@ -10,9 +10,6 @@
 .page-article-custom-grid .view-content{ overflow: hidden; }
 .page-article-custom-grid .col{ margin-bottom: 20px; }
 
-/* Carousel */
-.carousel-caption h3 { color: white; }
-
 /* Article */
 .node-type-article .field-name-field-image img {
   max-width: 100%;
