@@ -9,7 +9,8 @@
   background-color: #777;
 }
 
-.carousel-caption > h3 { color: white;}
+.carousel-caption { padding-bottom: 0px; }
+.carousel-caption > h3 { color: white; }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   display: block;
@@ -18,3 +19,6 @@
   line-height: 1;
   width: 100%;
 }
+
+@media screen and (min-width: 768px) { .carousel-caption { padding-bottom: 20px !important; } }
+@media screen and (min-width: 992px) { .carousel-caption { padding-bottom: 30px !important; } }
