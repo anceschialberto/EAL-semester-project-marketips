@@ -8,6 +8,9 @@
 .carousel .item {
   background-color: #777;
 }
+
+.carousel-caption > h3 { color: white;}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   display: block;
   height: auto;
