@@ -35,6 +35,7 @@ ul.views-summary, div.item-list.archive-item-list ul { list-style-type: none; }
 /* Navigation */
 .navbar-nav i { margin-right: 5px; }
 div.input-group { margin: 10px 0px 10px 0px; }
+div.sign-in-links { margin-top: 15px; }
 
 /* Social media */
 .social-icon p { margin: 0; }
