@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * Implements hook_help().
+ *
+ * Displays help and module information.
+ *
+ * @param path
+ *   Which path of the site we're using to display help
+ * @param arg
+ *   Array that holds the current path as returned from arg() function
+ */
+function big_news_7_help($path, $arg) {
+  switch ($path) {
+    case "admin/help#big_news_7":
+      return '<p>' . t("Displays in 'the verge style' the latest 7 news") . '</p>';
+      break;
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function big_news_7_block_info() {
+  $blocks['big_news_7'] = array(
+    // The name that will appear in the block list.
+    'info' => t('Big News 7'),
+    // Default setting.
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+
+/**
+ * Custom content function.
+ *
+ * Set beginning and end dates, retrieve posts from database
+ * saved in that time period.
+ *
+ * @return
+ *   A result set of the targeted posts.
+ */
+function big_news_7_contents(){
+  //Use Database API to retrieve current posts.
+  $query = db_select('node', 'n')
+    ->fields('n', array('nid', 'title', 'created'))
+    ->condition('status', 1) //Published.
+    ->condition('created', array($start_time, $end_time), 'BETWEEN')
+    ->orderBy('created', 'DESC') //Most recent first.
+    ->execute();
+  return $query;
+}

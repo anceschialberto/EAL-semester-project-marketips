@@ -1,0 +1,3 @@
+name = Big News 7
+description = A block module that displays in 'the verge style' the latest 7 news.
+core = 7.x

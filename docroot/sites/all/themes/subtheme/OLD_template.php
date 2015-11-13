@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * template.php
+ */
+ 
+?>
