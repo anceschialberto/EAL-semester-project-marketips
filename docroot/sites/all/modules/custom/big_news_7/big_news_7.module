@@ -42,11 +42,46 @@ function big_news_7_block_info() {
  */
 function big_news_7_contents(){
   //Use Database API to retrieve current posts.
-  $query = db_select('node', 'n')
-    ->fields('n', array('nid', 'title', 'created'))
-    ->condition('status', 1) //Published.
-    ->condition('created', array($start_time, $end_time), 'BETWEEN')
-    ->orderBy('created', 'DESC') //Most recent first.
-    ->execute();
+  $query = db_query("SELECT * FROM `node` WHERE type = 'article' ORDER BY `created` DESC LIMIT 7");
+  // $query = db_select('node', 'n')
+  //   ->fields('n', array('nid', 'title', 'created'))
+  //   ->condition('status', 1) //Published.
+  //   ->condition('created', array(1, 7), 'BETWEEN')
+  //   ->orderBy('created', 'DESC') //Most recent first.
+  //   ->execute();
   return $query;
+}
+
+/**
+ * Implements hook_block_view().
+ *
+ * Prepares the contents of the block.
+ */
+function big_news_7_block_view($delta = '') {
+  switch ($delta) {
+    case 'big_news_7':
+      $block['subject'] = t('Big news 7');
+      if (user_access('access content')) {
+        // Use our custom function to retrieve data.
+        $result = big_news_7_contents();
+        // Array to contain items for the block to render.
+        $items = array();
+        // Iterate over the resultset and format as links.
+        foreach ($result as $node) {
+          $items[] = array(
+            'data' => l($node->title, 'node/' . $node->nid),
+          );
+        }
+       // No content in the last week.
+        if (empty($items)) {
+          $block['content'] = t('No posts available.');
+        }
+        else {
+          // Pass data through theme function.
+          $block['content'] = theme('item_list', array(
+            'items' => $items));
+        }
+      }
+    return $block;
+  }
 }
