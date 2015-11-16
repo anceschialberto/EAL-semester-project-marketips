@@ -24,6 +24,7 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = bootstrap/css/custom.css
 stylesheets[all][] = css/style.css
 
 ; For information on choosing the desired method, please read the Drupal
@@ -53,6 +54,7 @@ scripts[] = 'bootstrap/js/transition.js'
 
 scripts[] = 'js/scripts.js'
 scripts[] = 'js/masonry.pkgd.min.js'
+scripts[] = 'js/jquery.foggy.min.js'
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
 settings[bootstrap_cdn] = ''
