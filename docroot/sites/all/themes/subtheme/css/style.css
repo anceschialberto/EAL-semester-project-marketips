@@ -52,10 +52,13 @@ div.sign-in-links { margin-top: 15px; }
 .carousel-inner img {
   min-width: 100%;
 }
-.carousel-inner .carousel-caption a {
-  font-size: 42px;
-  line-height: 1.6;
-  background-color: black;
+.carousel-inner .carousel-caption {
+  padding: 1rem;
+  margin-bottom: 20px;
+  background: rgba(0,0,0,0.8);
+}
+.carousel-inner .carousel-caption h3 {
+  font-size: 32px;
 }
 
 /* Masonry view */
@@ -106,15 +109,16 @@ div.sign-in-links { margin-top: 15px; }
 .node-article h2 {
   z-index: 100;
   position: absolute;
-  bottom: 88px;
-  left: 8px;
+  bottom: 83px;
   margin: 0 auto;
-  width: 95%;
+  /*text-align: center;*/
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-  background-color: black;
+  background: rgba(0,0,0,0.8);
+  padding: 1rem;
 }
 .node-article p {
-  margin: 10px 10px 10px 10px;
+  padding: 1rem;
+  margin: 0;
 }
 
 /* Footer */
