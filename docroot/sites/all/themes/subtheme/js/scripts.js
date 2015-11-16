@@ -4,6 +4,7 @@ jQuery(document).ready(function($){
 		$container.masonry({
 			itemSelector: '.masonry-brick',
 			transitionDuration: 0
+			// gutter: 5
 		});
 	});
 });

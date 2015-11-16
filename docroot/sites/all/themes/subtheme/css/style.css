@@ -67,6 +67,10 @@ footer a { color: #fff; }
 .masonry-brick.span-5 {
   width:100%;
 }
+.masonry-brick {
+  border-top: 1px solid;
+  border-color: rgb(221, 221, 221);
+}
 .node-article {
   padding:10px;
 }
@@ -75,12 +79,6 @@ footer a { color: #fff; }
   box-shadow:0 0 5px #999999;
   height:380px;
   overflow:hidden;
-}
-.masonry-brick.span-2 .node-article .inner {
-  height:780px;
-}
-.masonry-brick.span-3 .node-article .inner {
-  height:380px;
 }
 .node-article .text {
   padding:30px;

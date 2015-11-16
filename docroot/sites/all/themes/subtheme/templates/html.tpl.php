@@ -129,6 +129,7 @@
 
           var reading = new Reading();
           reading.set({pageLoaded: window.location.pathname});
+          reading.set({ user: Drupal.settings.parse.uid.toString()});
           reading.save(null, {
             success:function(reading){
               if(Drupal.settings.parse.debug){
@@ -181,7 +182,7 @@
               contentScrollEnd = currentTime.getTime();
               timeToContentEnd = Math.round((contentScrollEnd - scrollStart) / 1000);
               if (!debugMode) {
-                  reading.set({pageBottom: timeToContentEnd});
+                  reading.set({readArticle: timeToContentEnd});
                   reading.save(null, {
                     success:function(reading){
                       if(Drupal.settings.parse.debug){
@@ -207,11 +208,47 @@
               totalTime = Math.round((end - scrollStart) / 1000);
               if (!debugMode) {
                   if (totalTime < 60) {
-                      _gaq.push(['_setCustomVar', 5, 'ReaderType', 'Scanner', 2]);
+                      reading.set({type: 'Scanner'});
+                      reading.save(null, {
+                        success:function(reading){
+                          if(Drupal.settings.parse.debug){
+                            console.log('Object bottom ' + reading.id + " type read Scanner");
+                          }
+                        },
+                        error: function(reading, error){
+                          if(Drupal.settings.parse.debug){
+                            alert('Failed to create new object, with error code: ' + error.message);
+                          }
+                        }
+                      });
                   } else {
-                      _gaq.push(['_setCustomVar', 5, 'ReaderType', 'Reader', 2]);
+                      reading.set({type: 'Reader'});
+                      reading.save(null, {
+                        success:function(reading){
+                          if(Drupal.settings.parse.debug){
+                            console.log('Object bottom ' + reading.id + " type read Reader");
+                          }
+                        },
+                        error: function(reading, error){
+                          if(Drupal.settings.parse.debug){
+                            alert('Failed to create new object, with error code: ' + error.message);
+                          }
+                        }
+                      });
                   }
-                  _gaq.push(['_trackEvent', 'Reading', 'PageBottom', pageTitle, totalTime]);
+                  reading.set({pageBottom: totalTime});
+                  reading.save(null, {
+                    success:function(reading){
+                      if(Drupal.settings.parse.debug){
+                        console.log('Object bottom ' + reading.id + " read in " + totalTime);
+                      }
+                    },
+                    error: function(reading, error){
+                      if(Drupal.settings.parse.debug){
+                        alert('Failed to create new object, with error code: ' + error.message);
+                      }
+                    }
+                  });
               } else {
                   alert('bottom of page '+totalTime);
               }
