@@ -45,7 +45,7 @@ div.sign-in-links { margin-top: 15px; }
 /* Carousel */
 .carousel {
   margin: 0 auto;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0px 2px 6px #aca8a8;
 }
@@ -60,22 +60,25 @@ div.sign-in-links { margin-top: 15px; }
 .carousel-inner .carousel-caption h3 {
   font-size: 32px;
 }
+.carousel-inner .carousel-caption p {
+  display: none;
+}
 
 /* Masonry view */
 .masonry-brick.span-1 {
-  width:32.76%;
+  width:100%;
 }
 .masonry-brick.span-2 {
-  width:32.76%;
+  width:100%;
 }
 .masonry-brick.span-3 {
-  width:32.76%;
+  width:100%;
 }
 .masonry-brick.span-4 {
-  width:32.76%;
+  width:100%;
 }
 .masonry-brick.span-5 {
-  width:32.76%;
+  width:100%;
 }
 .masonry-brick {
   border-top: 1px;
@@ -124,3 +127,58 @@ div.sign-in-links { margin-top: 15px; }
 /* Footer */
 footer { margin-top: 20px; padding: 20px 0 0; background-color: #222; color: #fff; }
 footer a { color: #fff; }
+
+/* Media queries */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Carousel */
+  .carousel-inner .carousel-caption p {
+    display: block;
+  }
+
+  /* Masonry view */
+  .masonry-brick.span-1 {
+    width:49.3%;
+  }
+  .masonry-brick.span-2 {
+    width:49.3%;
+  }
+  .masonry-brick.span-3 {
+    width:49.3%;
+  }
+  .masonry-brick.span-4 {
+    width:49.3%;
+  }
+  .masonry-brick.span-5 {
+    width:49.3%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Masonry view */
+  .masonry-brick.span-1 {
+    width:32.5%;
+  }
+  .masonry-brick.span-2 {
+    width:32.5%;
+  }
+  .masonry-brick.span-3 {
+    width:32.5%;
+  }
+  .masonry-brick.span-4 {
+    width:32.5%;
+  }
+  .masonry-brick.span-5 {
+    width:32.5%;
+  }
+}
