@@ -66,7 +66,7 @@
   <script type="text/javascript">
     Parse.initialize("P60EfTUuOZoeZyD2qSLpOrc8DWwUk2YjEqU2HY1R", "JlgM5RtBO3nYKd9YqvFho8Su9xppRmwcRxRpaeIV");
 
-//comandi parse
+    //comandi parse
     // Simple syntax to create a new subclass of Parse.Object.
     var Visualizzazione = Parse.Object.extend("visualizzazione");
 
@@ -99,7 +99,7 @@
 
 
   <script type="text/javascript">
-//Script per vedere quanto hai letto di un articolo
+    //Script per vedere quanto hai letto di un articolo
     jQuery(function($) {
       // Debug flag
       var debugMode = false;
@@ -269,6 +269,41 @@
   });
   </script>
   <!-- FINE PARTE DI PARSE -->
+
+  <script>
+    jQuery(function($) {
+      if($('body').hasClass('front')) {
+        /* Masonry */
+        var $container = $('.view-masonry-front-page .view-content').imagesLoaded(function() {
+          $container.masonry({
+            percentPosition: true,
+            itemSelector: '.masonry-brick',
+            // fast transitions
+            transitionDuration: '0.2s',
+            // vertical space between blocks
+            gutter: 10
+          });
+        });
+
+        /* Infinite scroll */
+        var $container = $('.view-masonry-front-page .view-content').imagesLoaded(function() {
+          $container.infinitescroll({
+            navSelector  : "ul.pagination",
+                           // selector for the paged navigation (it will be hidden)
+            nextSelector : "ul.pagination .next a",
+                           // selector for the NEXT link (to page 2)
+            itemSelector : ".masonry-brick"
+                           // selector for all items you'll retrieve
+          },
+          // trigger Masonry as a callback
+          function(newElements) {
+            var $newElems = $(newElements);
+            $container.masonry('appended', $newElems);
+          });
+        });
+      }
+    });
+  </script>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
