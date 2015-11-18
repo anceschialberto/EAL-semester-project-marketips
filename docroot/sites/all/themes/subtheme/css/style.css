@@ -46,6 +46,8 @@ div.sign-in-links { margin-top: 15px; }
 .carousel {
   margin: 0 auto;
   margin-bottom: 30px;
+  left: 0px;
+  right: 0px;
   background-color: #ffffff;
   box-shadow: 0px 2px 6px #aca8a8;
 }
@@ -53,12 +55,14 @@ div.sign-in-links { margin-top: 15px; }
   min-width: 100%;
 }
 .carousel-inner .carousel-caption {
-  padding: 1rem;
-  margin-bottom: 20px;
+  padding: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   background: rgba(0,0,0,0.8);
 }
 .carousel-inner .carousel-caption h3 {
-  font-size: 32px;
+  font-size: 24px;
 }
 .carousel-inner .carousel-caption p {
   display: none;
@@ -66,19 +70,19 @@ div.sign-in-links { margin-top: 15px; }
 
 /* Masonry view */
 .masonry-brick.span-1 {
-  width:100%;
+  width:95%;
 }
 .masonry-brick.span-2 {
-  width:100%;
+  width:95%;
 }
 .masonry-brick.span-3 {
-  width:100%;
+  width:95%;
 }
 .masonry-brick.span-4 {
-  width:100%;
+  width:95%;
 }
 .masonry-brick.span-5 {
-  width:100%;
+  width:95%;
 }
 .masonry-brick {
   border-top: 1px;
@@ -142,19 +146,19 @@ footer a { color: #fff; }
 
   /* Masonry view */
   .masonry-brick.span-1 {
-    width:49.3%;
+    width:47.2%;
   }
   .masonry-brick.span-2 {
-    width:49.3%;
+    width:47.2%;
   }
   .masonry-brick.span-3 {
-    width:49.3%;
+    width:47.2%;
   }
   .masonry-brick.span-4 {
-    width:49.3%;
+    width:47.2%;
   }
   .masonry-brick.span-5 {
-    width:49.3%;
+    width:47.2%;
   }
 }
 
@@ -167,18 +171,18 @@ footer a { color: #fff; }
 @media (min-width: 1200px) {
   /* Masonry view */
   .masonry-brick.span-1 {
-    width:32.5%;
+    width:31.6%;
   }
   .masonry-brick.span-2 {
-    width:32.5%;
+    width:31.6%;
   }
   .masonry-brick.span-3 {
-    width:32.5%;
+    width:31.6%;
   }
   .masonry-brick.span-4 {
-    width:32.5%;
+    width:31.6%;
   }
   .masonry-brick.span-5 {
-    width:32.5%;
+    width:31.6%;
   }
 }
