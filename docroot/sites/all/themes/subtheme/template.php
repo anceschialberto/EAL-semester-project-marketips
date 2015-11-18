@@ -28,7 +28,7 @@
      //'parseId' => $cookie,
      'uid' => $user->uid,
      'tag' => $tag,
-     'debug' => true
+     'debug' => false
    );
 
    drupal_add_js(array('parse'=>$parse), 'setting');

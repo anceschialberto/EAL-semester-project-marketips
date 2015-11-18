@@ -76,6 +76,7 @@
     visualizzazione.set({ user: Drupal.settings.parse.uid.toString()});
     visualizzazione.set({ date: new Date().getTime()});
     visualizzazione.set({ url: window.location.pathname});
+    console.log("Path " + window.location.pathname);
     visualizzazione.set({ tag: Drupal.settings.parse.tag})
 
     visualizzazione.save(null, {
@@ -85,7 +86,7 @@
             console.log('New object created with objectId: ' + visualizzazione.id);
         }
       },
-      error: function(gameScore, error) {
+      error: function(visualizzazione, error) {
         // Execute any logic that should take place if the save fails.
         // error is a Parse.Error with an error code and message.
         if(Drupal.settings.parse.debug){
