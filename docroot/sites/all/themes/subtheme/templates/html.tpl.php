@@ -297,8 +297,9 @@
           },
           // trigger Masonry as a callback
           function(newElements) {
-            var $newElems = $(newElements);
-            $container.masonry('appended', $newElems);
+            var $newElems = $(newElements).imagesLoaded(function() {
+              $container.masonry('appended', $newElems);
+            });
           });
         });
       }

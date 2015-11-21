@@ -146,19 +146,19 @@ footer a { color: #fff; }
 
   /* Masonry view */
   .masonry-brick.span-1 {
-    width:47.2%;
+    width:49.3%;
   }
   .masonry-brick.span-2 {
-    width:47.2%;
+    width:49.3%;
   }
   .masonry-brick.span-3 {
-    width:47.2%;
+    width:49.3%;
   }
   .masonry-brick.span-4 {
-    width:47.2%;
+    width:49.3%;
   }
   .masonry-brick.span-5 {
-    width:47.2%;
+    width:49.3%;
   }
 }
 
@@ -171,18 +171,18 @@ footer a { color: #fff; }
 @media (min-width: 1200px) {
   /* Masonry view */
   .masonry-brick.span-1 {
-    width:31.6%;
+    width:31.9%;
   }
   .masonry-brick.span-2 {
-    width:31.6%;
+    width:31.9%;
   }
   .masonry-brick.span-3 {
-    width:31.6%;
+    width:31.9%;
   }
   .masonry-brick.span-4 {
-    width:31.6%;
+    width:31.9%;
   }
   .masonry-brick.span-5 {
-    width:31.6%;
+    width:31.9%;
   }
 }

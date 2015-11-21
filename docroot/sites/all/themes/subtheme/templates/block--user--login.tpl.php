@@ -27,19 +27,20 @@ $output .= $elements['form_id']['#children'];
 $output .= $elements['actions']['#children'];
 $output .= '<div class="sign-in-links">' . $elements['links']['#children'] . '</div>';
 $output .= '</div></form>';
-print $output;
 
 $output .= '
           </div>
         </div>
       </li>
-      <!-- <li class="divider">&nbsp;</li>
+      <li class="divider">&nbsp;</li>
       <li>
       <input class="btn btn-primary btn-block" id="sign-in-google" type="button" value="Sign In with Google" />
       <input class="btn btn-primary btn-block" id="sign-in-twitter" type="button" value="Sign In with Twitter" />
-      </li> -->
+      </li>
     </ul>
   </li>
 </ul>';
+
+print $output;
 
 ?>
