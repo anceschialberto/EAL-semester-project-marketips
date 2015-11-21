@@ -34,6 +34,7 @@ $parse = array(
   //'parseId' => $cookie,
   'uid' => $user->uid,
   'tag' => $tag,
+  'title' => drupal_get_title(),
   'debug' => false
 );
 
