@@ -131,6 +131,7 @@
           var reading = new Reading();
           reading.set({pageLoaded: window.location.pathname});
           reading.set({ user: Drupal.settings.parse.uid.toString()});
+          reading.set({title: Drupal.settings.parse.title});
           reading.save(null, {
             success:function(reading){
               if(Drupal.settings.parse.debug){
