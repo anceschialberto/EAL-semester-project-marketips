@@ -8,12 +8,12 @@
 
 .ds-2col-stacked-fluid > .group-left {
   float: left; /* LTR */
-  width: 50%;
+  width: 100%;
 }
 
 .ds-2col-stacked-fluid > .group-right {
   float: right; /* LTR */
-  width: 50%;
+  width: 0%;
 }
 
 .ds-2col-stacked-fluid.group-one-column > .group-left,

@@ -1,0 +1,15 @@
+/* Navigation */
+.navbar {
+  margin-bottom: 0px;
+}
+.navbar-nav i { margin-right: 5px; }
+div.input-group { margin: 10px 0px 10px 0px; }
+div.sign-in-links { margin-top: 15px; }
+
+/* Social media */
+.social-icon p { margin: 0; }
+.social-icon p a {
+  margin-left: 5px;
+  font-size: 35px;
+  color: #000000;
+}

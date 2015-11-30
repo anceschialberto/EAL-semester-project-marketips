@@ -1,0 +1,57 @@
+/* Media queries */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Carousel */
+  .carousel-inner .carousel-caption p {
+    display: block;
+  }
+
+  /* Masonry view */
+  .masonry-brick.span-1 {
+    width:49.3%;
+  }
+  .masonry-brick.span-2 {
+    width:49.3%;
+  }
+  .masonry-brick.span-3 {
+    width:49.3%;
+  }
+  .masonry-brick.span-4 {
+    width:49.3%;
+  }
+  .masonry-brick.span-5 {
+    width:49.3%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* Carousel */
+  .carousel-inner .carousel-caption h3 {
+    font-size: 39px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* Masonry view */
+  .masonry-brick.span-1 {
+    width:31.9%;
+  }
+  .masonry-brick.span-2 {
+    width:31.9%;
+  }
+  .masonry-brick.span-3 {
+    width:31.9%;
+  }
+  .masonry-brick.span-4 {
+    width:31.9%;
+  }
+  .masonry-brick.span-5 {
+    width:31.9%;
+  }
+}
