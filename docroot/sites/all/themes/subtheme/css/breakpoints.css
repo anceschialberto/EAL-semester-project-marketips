@@ -14,18 +14,6 @@
   .masonry-brick.span-1 {
     width:49.3%;
   }
-  .masonry-brick.span-2 {
-    width:49.3%;
-  }
-  .masonry-brick.span-3 {
-    width:49.3%;
-  }
-  .masonry-brick.span-4 {
-    width:49.3%;
-  }
-  .masonry-brick.span-5 {
-    width:49.3%;
-  }
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -40,18 +28,6 @@
 @media (min-width: 1200px) {
   /* Masonry view */
   .masonry-brick.span-1 {
-    width:31.9%;
-  }
-  .masonry-brick.span-2 {
-    width:31.9%;
-  }
-  .masonry-brick.span-3 {
-    width:31.9%;
-  }
-  .masonry-brick.span-4 {
-    width:31.9%;
-  }
-  .masonry-brick.span-5 {
     width:31.9%;
   }
 }
