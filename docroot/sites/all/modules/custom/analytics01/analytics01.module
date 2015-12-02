@@ -1,0 +1,52 @@
+<?php
+require 'vendor/parse/php-sdk/autoload.php';
+require_once 'analytics.php';
+require_once 'mail.php';
+use Parse\ParseClient;
+use Parse\ParseObject;
+use Parse\ParseQuery;
+
+
+function analytics01_menu() {
+
+    /*
+     * ******* /my_module/cc
+     */
+    $items = array();
+
+    $items['custom/analytics01'] = array(
+        'title' => 'Analytics01',
+        'page callback' => 'analytics01_con',
+        'access arguments' => array('access content'),
+        'type' => MENU_CALLBACK,
+    );
+
+    return $items;
+}
+
+function analytics01_con() {
+
+    ParseClient::initialize('P60EfTUuOZoeZyD2qSLpOrc8DWwUk2YjEqU2HY1R', 's3b2cfGtQhSFYM16ZIJQ7yXioTjt35Um5mn9SyP8', '3jz6CONqt5psS4UlGu3RB28ldIw311Iv2I8eA3Mh');
+    drupal_add_js(drupal_get_path('module', 'analytics01') . "/Chart.js");
+    drupal_add_js(drupal_get_path('module', 'analytics01') . "/MyChart.js");
+    drupal_add_js(drupal_get_path('module', 'analytics01') . "/ga.js");
+
+    $vars = "";
+
+    $vars .= getLastXTraffic(3);
+
+    $node = infoArticle("Paratus Sed");
+
+    print_r($node);
+
+  //  echo "<h1> STOP </h1> <br><br>";
+
+    $tagU = getTagUser(1);
+
+    print_r($tagU);
+
+
+    $sendMail = sendMail();
+
+    return $vars;
+}
