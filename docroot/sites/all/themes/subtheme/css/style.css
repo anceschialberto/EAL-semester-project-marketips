@@ -9,6 +9,14 @@
 
 .field-type-taxonomy-term-reference .field-item { display: inline; margin-right: 10px; }
 
-h2.block-title {
+.footer h2.block-title {
   color: rgb(235,104,100);
+}
+
+#block-block-7 {
+  text-align: center;
+}
+
+#block-block-7 p {
+  margin: 10.5px 0px 10.5px 0px;
 }
