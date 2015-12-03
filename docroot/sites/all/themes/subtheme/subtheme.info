@@ -3,7 +3,6 @@ description = A Bootstrap subtheme.
 core = 7.x
 base theme = bootstrap
 
-
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;

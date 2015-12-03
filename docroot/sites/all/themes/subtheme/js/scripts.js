@@ -13,21 +13,21 @@ jQuery(function($) {
     });
 
     /* Infinite scroll */
-    var $container = $('.view-masonry-front-page .view-content').imagesLoaded(function() {
-      $container.infinitescroll({
-        navSelector  : "ul.pagination",
-                       // selector for the paged navigation (it will be hidden)
-        nextSelector : "ul.pagination .next a",
-                       // selector for the NEXT link (to page 2)
-        itemSelector : ".masonry-brick"
-                       // selector for all items you'll retrieve
-      },
-      // trigger Masonry as a callback
-      function(newElements) {
-        var $newElems = $(newElements).imagesLoaded(function() {
-          $container.masonry('appended', $newElems);
-        });
-      });
-    });
+    // var $container = $('.view-masonry-front-page .view-content').imagesLoaded(function() {
+    //   $container.infinitescroll({
+    //     navSelector  : "ul.pagination",
+    //                    // selector for the paged navigation (it will be hidden)
+    //     nextSelector : "ul.pagination .next a",
+    //                    // selector for the NEXT link (to page 2)
+    //     itemSelector : ".masonry-brick"
+    //                    // selector for all items you'll retrieve
+    //   },
+    //   // trigger Masonry as a callback
+    //   function(newElements) {
+    //     var $newElems = $(newElements).imagesLoaded(function() {
+    //       $container.masonry('appended', $newElems);
+    //     });
+    //   });
+    // });
   }
 });
