@@ -4,7 +4,7 @@
 
 /* Article */
 .node-type-article .field-name-field-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -58,16 +58,6 @@
   margin-bottom: 20px;
 }
 
-.node-article img {
-  position: relative;
-  width:100%;
-  height:100%;
-}
-
-.node-article {
-  padding:0px;
-}
-
 .field-name-addtoany {
   text-align: center;
   position: relative;
@@ -82,22 +72,13 @@ a.a2a_button_facebook_like {
   width: 105px !important;
 }
 
-.block-disqus h2 {
-  text-align: center;
+#block-views-article-block-4 img {
+  width: 100%;
+  height: 100%;
 }
 
-/* THUMBNAIL */
-div.thumbnail {
-  border-top: 1px;
-  border-left: 1px;
-  border-right: 1px;
-  border-bottom: 1px;
-  border-color: rgb(221, 221, 221);
-  border-radius: 2px;
-  margin-bottom: 10px;
-  padding: 0px;
-  background-color: #ffffff;
-  box-shadow: 0px 2px 6px #aca8a8;
+.block-disqus h2 {
+  text-align: center;
 }
 
 .views-bootstrap-thumbnail-plugin-style .col {
