@@ -44,6 +44,7 @@
   position: relative;
   min-width: 100%;
   min-height: 300px;
+  margin: auto;
 }
 
 .masonry-brick .node-article h2 {

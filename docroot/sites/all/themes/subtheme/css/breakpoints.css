@@ -5,6 +5,14 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .field-name-title h1 {
+    font-size: 39px;
+  }
+
+  #block-views-article-block-4 .caption h3 {
+    font-size: 26px;
+  }
+  
   /* Carousel */
   .carousel-inner .carousel-caption p {
     display: block;
@@ -26,6 +34,25 @@
 
   .page-node .main-container {
     padding: 0px;
+  }
+
+  /* Navigation bar */
+  .nav > li.dropdown.open .dropdown-menu {
+    z-index: -10;
+    display: table;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    border: 0px;
+    border-radius: 0px;
+  }
+
+  .dropdown-menu > li {
+    display: table-cell;
+  }
+
+  .dropdown-menu > li > a {
+    padding: 15px 0px;
   }
 }
 

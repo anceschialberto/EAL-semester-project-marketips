@@ -22,25 +22,8 @@ div.sign-in-links { margin-top: 15px; }
   position: static;
 }
 
-.nav > li.dropdown.open .dropdown-menu {
-  z-index: -10;
-  /*position: absolute;*/
-  /*left: -336px;*/
-  /*right: 0px;*/
-  display: table;
-  width: 100%;
-  padding: 20px 0px 0px 0px;
-  text-align: center;
-  border: 0px;
-  border-radius: 0px;
-}
-
-.dropdown-menu > li {
-  display: table-cell;
-}
-
-.dropdown-menu > li > a {
-  padding: 15px 0px;
+.nav .embedded-form {
+  padding: 15px !important;
 }
 
 .navbar-inverse {

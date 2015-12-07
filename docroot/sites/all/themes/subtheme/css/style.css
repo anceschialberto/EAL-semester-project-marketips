@@ -5,6 +5,10 @@
   padding: 0px;
 }
 
+.not-front .main-container {
+  padding: 10px;
+}
+
 .field-type-taxonomy-term-reference .field-item { display: inline; margin-right: 10px; }
 
 .footer h2.block-title {
