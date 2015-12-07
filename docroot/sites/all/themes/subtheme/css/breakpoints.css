@@ -12,7 +12,7 @@
   #block-views-article-block-4 .caption h3 {
     font-size: 26px;
   }
-  
+
   /* Carousel */
   .carousel-inner .carousel-caption p {
     display: block;
@@ -53,6 +53,16 @@
 
   .dropdown-menu > li > a {
     padding: 15px 0px;
+  }
+
+  .sign-in-form {
+    width: 30% !important;
+    margin-right: 135px;
+  }
+
+  .sign-up-form {
+    width: 30% !important;
+    margin-right: 135px;
   }
 }
 

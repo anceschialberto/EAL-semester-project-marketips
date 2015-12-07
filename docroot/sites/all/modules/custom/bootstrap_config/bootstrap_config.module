@@ -28,8 +28,8 @@ function bootstrap_config_block_view($delta = '') {
 function _bootstrap_config_login_block_view() {
   $content = '<ul class="menu nav navbar-nav secondary">';
   $content .= '<li class="expanded dropdown">';
-  $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Sign in') . ' <strong class="caret"></strong></a>';
-  $content .= '<div class="dropdown-menu embedded-form">';
+  $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Log in') . ' <strong class="caret"></strong></a>';
+  $content .= '<div class="dropdown-menu dropdown-menu-right embedded-form sign-in-form">';
   $form1 = drupal_get_form('user_login');
   $content .= drupal_render($form1);
   $content .= '</div>';
@@ -38,7 +38,7 @@ function _bootstrap_config_login_block_view() {
   if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
     $content .= '<li class="expanded dropdown">';
     $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Register') . ' <strong class="caret"></strong></a>';
-    $content .= '<div class="dropdown-menu embedded-form">';
+    $content .= '<div class="dropdown-menu dropdown-menu-right embedded-form sign-up-form">';
     $form = drupal_get_form('user_register_form');
     $content .= drupal_render($form);
     $content .= '</div>';
@@ -69,6 +69,8 @@ function bootstrap_config_form_alter(&$form, &$form_state, $form_id) {
         'wrapper' => 'ajax-' . $html_id . '-wrapper',
         'event' => 'click',
       );
+    case 'user_register':
+      $form['account']['mail']['#description'] = t('The e-mail address is not made public and will only be used to send you a new password, our weekly newsletter or notifications.');
       break;
   }
 }
