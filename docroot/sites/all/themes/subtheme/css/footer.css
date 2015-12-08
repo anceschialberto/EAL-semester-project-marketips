@@ -1,7 +1,26 @@
 /* Footer */
-footer { margin-top: 20px; padding: 20px 0 0; background-color: #222; color: #fff; }
+footer {
+  margin-top: 20px;
+  padding: 20px 0 0;
+  background-color: #222;
+  color: #fff;
+}
 
-footer a { color: #fff; }
+footer a {
+  color: #fff;
+}
+
+.footer h2.block-title {
+  color: rgb(235,104,100);
+}
+
+#block-block-7 {
+  text-align: center;
+}
+
+#block-block-7 p {
+  margin: 10.5px 0px 10.5px 0px;
+}
 
 .social-icon i.fa {
   color: white;

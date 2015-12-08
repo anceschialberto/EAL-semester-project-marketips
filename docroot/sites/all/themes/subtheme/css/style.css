@@ -1,24 +1,10 @@
 /* Admin backend */
 #admin-menu { z-index: 9999; }
 
-.front section.col-sm-12 {
+.col-md-12, .col-sm-12 {
   padding: 0px;
 }
 
-.not-front .main-container {
-  padding: 10px;
-}
-
-.field-type-taxonomy-term-reference .field-item { display: inline; margin-right: 10px; }
-
-.footer h2.block-title {
-  color: rgb(235,104,100);
-}
-
-#block-block-7 {
-  text-align: center;
-}
-
-#block-block-7 p {
-  margin: 10.5px 0px 10.5px 0px;
+h1, h2, h3 {
+  font-size: 28px;
 }

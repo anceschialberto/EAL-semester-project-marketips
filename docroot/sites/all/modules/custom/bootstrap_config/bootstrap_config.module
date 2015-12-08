@@ -26,7 +26,7 @@ function bootstrap_config_block_view($delta = '') {
 }
 
 function _bootstrap_config_login_block_view() {
-  $content = '<ul class="menu nav navbar-nav secondary">';
+  $content = '<ul class="menu nav navbar-nav navbar-right secondary">';
   $content .= '<li class="expanded dropdown">';
   $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Log in') . ' <strong class="caret"></strong></a>';
   $content .= '<div class="dropdown-menu dropdown-menu-right embedded-form sign-in-form">';
@@ -39,8 +39,13 @@ function _bootstrap_config_login_block_view() {
     $content .= '<li class="expanded dropdown">';
     $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Register') . ' <strong class="caret"></strong></a>';
     $content .= '<div class="dropdown-menu dropdown-menu-right embedded-form sign-up-form">';
+    $content .= '<div class="newsletter-banner-container">';
+    $content .= '<img src="sites/all/modules/custom/bootstrap_config/newsletter.png" alt="Marketips newsletter banner">';
+    $content .= '</div>';
+    $content .= '<div class="form-container pull-right">';
     $form = drupal_get_form('user_register_form');
     $content .= drupal_render($form);
+    $content .= '</div>';
     $content .= '</div>';
     $content .= '</li>';
   }
