@@ -8,6 +8,11 @@
   height: auto;
 }
 
+.page-node-revisions .field-name-field-image img {
+  width: auto;
+  height: auto;
+}
+
 .group-header {
   padding: 0;
 }

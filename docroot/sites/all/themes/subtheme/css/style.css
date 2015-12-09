@@ -18,3 +18,21 @@ div.main-container.container-fluid {
   margin-left: auto;
   padding: 0px 15px;
 }
+
+#block-block-7, #block-block-9 {
+  text-align: center;
+}
+
+#block-block-7 p, #block-block-9 p {
+  margin: 10.5px 0px 10.5px 0px;
+}
+
+.block-revisioning {
+  text-align: center;
+  margin: 10.5px 0px 10.5px 0px;
+}
+
+.block-revisioning ul {
+  padding: 0px;
+  list-style-type: none;
+}

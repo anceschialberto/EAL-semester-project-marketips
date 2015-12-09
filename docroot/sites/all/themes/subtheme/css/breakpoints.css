@@ -15,14 +15,14 @@
     padding-top: 135px;
   }
 
-  div.main-container.container-fluid {
-    padding: 40px 100px;
-  }
-
   .front div.main-container.container-fluid, .node-type-article div.main-container.container-fluid {
     margin-right: auto;
     margin-left: auto;
     padding: 0px 15px;
+  }
+
+  div.main-container.container-fluid, .page-node-revisions div.main-container.container-fluid {
+    padding: 40px 100px;
   }
 
   h1, h3 {
