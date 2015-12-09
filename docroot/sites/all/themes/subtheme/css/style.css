@@ -8,3 +8,13 @@
 h1, h2, h3 {
   font-size: 28px;
 }
+
+div.main-container.container-fluid {
+  padding: 30px 30px;
+}
+
+.front div.main-container.container-fluid, .node-type-article div.main-container.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0px 15px;
+}

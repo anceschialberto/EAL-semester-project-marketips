@@ -9,19 +9,33 @@
   padding-right: 0px;
 }
 
+.navbar-collapse {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .navbar-header {
   width: 322px;
   height: 60px;
   float: none;
 }
 
+.logo img {
+  z-index: 10;
+  height: 100px;
+  padding-right: 10px;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+
 .navbar-nav i { margin-right: 5px; }
 div.input-group { margin: 10px 0px 10px 0px; }
 div.sign-in-links { margin-top: 15px; }
 
-.nav > li.dropdown.open {
+/*.nav > li.dropdown.open {
   position: static;
-}
+}*/
 
 .nav .embedded-form {
   padding: 15px !important;
@@ -35,31 +49,21 @@ div.sign-in-links { margin-top: 15px; }
   display: none;
 }
 
-.sign-up-form .newsletter-banner-container {
-  /*float:left;*/
-  /*display: none;*/
-}
-
-.sign-up-form .form-container {
-  /*float: left;*/
+.newsletter-banner-container img {
+  display: none;
 }
 
 .logo {
   margin: 0px;
 }
 
-.logo img {
-  z-index: 10;
-  height: 100px;
-  padding-right: 10px;
-  position: absolute;
-  top: 3px;
-  left: 0px;
-}
-
 .navbar-toggle {
   position: absolute;
   right: 0px;
+}
+
+.form-container {
+  width: 100%;
 }
 
 /* Social media */
