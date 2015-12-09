@@ -1,8 +1,28 @@
+@font-face {
+    font-family: OldRepublic;
+    src: url(../font/sf-old-republic/SFOldRepublic.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'OldRepublic';
+}
+p, div {
+    font-family: 'OldRepublic';
+}
+
 /* Admin backend */
 #admin-menu { z-index: 9999; }
 
 .col-md-12, .col-sm-12 {
   padding: 0px;
+}
+
+.page-taxonomy .text-center {
+  overflow: hidden;
+  clear: left;
+}
+.page-taxonomy .col {
+  margin-bottom: 20px;
 }
 
 h1, h2, h3 {
