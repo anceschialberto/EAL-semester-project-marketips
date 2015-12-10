@@ -40,7 +40,7 @@ function _bootstrap_config_login_block_view() {
     $content .= '<a class="dropdown-toggle" href="#" data-toggle="dropdown">' . t('Register') . ' <strong class="caret"></strong></a>';
     $content .= '<div class="dropdown-menu dropdown-menu-right embedded-form sign-up-form">';
     $content .= '<div class="newsletter-banner-container">';
-    $content .= '<img src="sites/all/modules/custom/bootstrap_config/newsletter.png" alt="Marketips newsletter banner">';
+    $content .= '<img src="/sites/all/modules/custom/bootstrap_config/newsletter.png" alt="Marketips newsletter banner">';
     $content .= '</div>';
     $content .= '<div class="form-container pull-right">';
     $form = drupal_get_form('user_register_form');

@@ -39,6 +39,10 @@ div.main-container.container-fluid {
   padding: 0px 15px;
 }
 
+#block-views-article-block-4 {
+  margin-bottom: 30px;
+}
+
 #block-block-7, #block-block-9 {
   text-align: center;
 }

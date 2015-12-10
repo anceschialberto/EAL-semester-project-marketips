@@ -8,10 +8,10 @@
   height: auto;
 }
 
-.page-node-revisions .field-name-field-image img {
-  width: auto;
+/*.page-node-revisions .field-name-field-image img {
+  width: 100%;
   height: auto;
-}
+}*/
 
 .group-header {
   padding: 0;
@@ -53,6 +53,11 @@ a.a2a_button_facebook_like {
 
 .group-middle {
   margin-bottom: 35px;
+}
+
+.group-middle img {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .field-type-taxonomy-term-reference .field-item {

@@ -49,6 +49,7 @@
   /* Carousel */
   .carousel-inner .carousel-caption p {
     display: block;
+    padding: 0px 30px;
   }
 
   /* Masonry view on frontpage */
