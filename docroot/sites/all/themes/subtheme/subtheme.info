@@ -57,9 +57,7 @@ scripts[] = 'bootstrap/js/scrollspy.js'
 scripts[] = 'bootstrap/js/tab.js'
 scripts[] = 'bootstrap/js/transition.js'
 
-scripts[] = 'js/scripts.js'
 scripts[] = 'js/masonry.pkgd.min.js'
-scripts[] = 'js/infinitescroll.min.js'
 
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
