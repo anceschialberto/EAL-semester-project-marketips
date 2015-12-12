@@ -159,11 +159,11 @@ jQuery(function($) {
 
   // Track the scrolling and track location
   $(window).scroll(function() {
-      if (timer) {
-          clearTimeout(timer);
-      }
+    if (timer) {
+        clearTimeout(timer);
+    }
 
-      // Use a buffer so we don't call trackLocation too often.
-      timer = setTimeout(trackLocation, callBackTime);
-    });
+    // Use a buffer so we don't call trackLocation too often.
+    timer = setTimeout(trackLocation, callBackTime);
   });
+});
