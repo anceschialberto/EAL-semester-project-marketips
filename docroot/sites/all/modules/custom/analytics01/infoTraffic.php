@@ -5,6 +5,11 @@ use Parse\ParseObject;
 use Parse\ParseQuery;
 
 
+/**
+ * Same code from analytics.php Should need a ajax-Php function in order to call those methods...
+ * Copied the code for quickness
+ */
+
 $x = $_GET['q'];
 
 ParseClient::initialize('P60EfTUuOZoeZyD2qSLpOrc8DWwUk2YjEqU2HY1R', 's3b2cfGtQhSFYM16ZIJQ7yXioTjt35Um5mn9SyP8', '3jz6CONqt5psS4UlGu3RB28ldIw311Iv2I8eA3Mh');

@@ -1,9 +1,15 @@
+
 <?php
 require 'vendor/parse/php-sdk/autoload.php';
 require_once 'analytics.php';
 use Parse\ParseClient;
 use Parse\ParseObject;
 use Parse\ParseQuery;
+
+/**
+ * Same code from analytics.php Should need a ajax-Php function in order to call those methods...
+ * Copied the code for quickness
+ */
 
 $title = $_GET['q'];
 

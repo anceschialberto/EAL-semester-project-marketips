@@ -5,3 +5,5 @@
 
 ga('create', 'UA-69391210-4', 'auto');
 ga('send', 'pageview');
+
+//Google Analytics Script
